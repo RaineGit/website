@@ -1,0 +1,145 @@
+<html>
+	<head>
+		<title>Raine's Website</title>
+		<meta name="description" content="I'm a 18-year-old who is interested in Computer Science and Natural Language Processing">
+		<meta name="keywords" content="Games, FNaF, Five Nights at Freddy's, Android">
+		<meta name="viewport" content="width=device-width initial-scale=0.8, user-scalable=no">
+		<link rel="stylesheet" href="style.css">
+		<script src="https://kit.fontawesome.com/7b0f41b6ef.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<div class="alignToHCenter navbar">
+			<div id="navbar-selector" class="navbar-selector"></div>
+			<p class="sakura" align="center">Raine<br>Page</p>
+			<div style="display: inline-block; width: 85px; height: 35px;"></div>
+			<a class="navbar-button" id="home-button" onclick="changePage('home')">Home</a>
+			<a class="navbar-button" id="projects-button" onclick="changePage('projects')">Projects</a>
+			<a class="navbar-button" href="https://server.raine.page">More stuff</a>
+			<a class="navbar-button" id="credits-button" onclick="changePage('credits')">Credits</a>
+			<div style="display: inline-block; width: 10px; height: 35px;"></div>
+		</div>
+		<div class="pages-parent">
+			<div id="pages" class="alignToHCenter pages">
+				<div id="home-page" class="page" align="left">
+					<h1>Home</h1>
+					<p>
+						Hi! I'm a 18-year-old who is interested in Computer Science and Natural Language Processing, I am currently studying Computer Science.<br>
+						In <a onclick="changePage('projects')" class="fake-link">Projects</a> you may find some of the things that I have made over the past years.<br>
+						<a onclick="changePage('about-me')" class="fake-link">More about me</a><br><br>
+						Thanks for coming!
+					</p>
+					<p>
+						Social links:<br>
+						<a href="https://discord.gg/EeWQBAf2zQ">Discord</a>
+						<br>
+						<a href="https://github.com/MC41Github">Github</a>
+						<br>
+						<a href="https://youtube.com/mc41games">Youtube</a>
+						<br>
+						<a href="https://twitter.com/mcleocita">Twitter</a>
+						<br>
+						<a href="https://twitter.com/cypress128">Personal Twitter</a>
+					</p>
+				</div>
+				<div id="projects-page" class="page" align="left">
+					<div class="generic-card" style="position: relative; margin-top: 30px; padding-right: 60px;" onclick="openLink('https://server.raine.page/gitea/cypress')">
+						<h3 style="margin: 0; margin-bottom: 3px;">Small projects</h3>
+						<p style="margin: 0;">Messy and unorganized programs and/or games that I have made</p>
+						<img src="imgs/chevron-right-solid.svg" class="alignToVCenter" style="position: absolute; right: 20px; height: 25px;"></img>
+					</div>
+					<h1>Projects</h1>
+					<div class="project-card" onclick="alert('🙃')">
+						<div class="project-thumb-parent">
+							<image src="imgs/private-thumb.png" class="project-thumb"></image>
+						</div>
+						<div class="project-content">
+							<h2 class="project-title">Private Projects</h2>
+							<p>Projects that I keep private, either because they are still very experimental or because I know I will likely end up cancelling them.<br><br><u>Status</u><br><span class="green">In development</span></p>
+						</div>
+					</div>
+					<div class="project-card" onclick="alert('This project is cancelled')">
+						<div class="project-thumb-parent">
+							<image src="imgs/3dgma-thumb.jpg" class="project-thumb"></image>
+						</div>
+						<div class="project-content">
+							<h2 class="project-title">3DGMA</h2>
+							<p>This is a 3D game maker for Android, similar to Unity3D. It is unfinished and not in development.<br><br><u>Status</u><br><span class="red">Inactive development (2019–2020)</span></p>
+						</div>
+					</div>
+					<div class="project-card" onclick="openLink('https://gamejolt.com/games/fnafhwa/415851')">
+						<div class="project-thumb-parent">
+							<image src="imgs/fnafhwa-thumb.jpg" class="project-thumb"></image>
+						</div>
+						<div class="project-content">
+							<h2 class="project-title">FNaF Help Wanted Android</h2>
+							<p>Unofficial Android port of the game Five Nights at Freddy's Help Wanted. It is unfinished and not in development.<br><br><u>Status</u><br><span class="red">Inactive development (2019–2020)</span></p>
+						</div>
+					</div>
+					<div class="project-card" onclick="openLink('https://gamejolt.com/games/st3ma/388243')">
+						<div class="project-thumb-parent">
+							<image src="imgs/st3ma-thumb.jpg" class="project-thumb" style="opacity: 0.9"></image>
+						</div>
+						<div class="project-content">
+							<h2 class="project-title">ST3 Multiplayer Android</h2>
+							<p>Unofficial Android port of the game Slendytubbies 3 Multiplayer. It is unfinished and not in development.<br><br><u>Status</u><br><span class="red">Inactive development (2018–2019)</span></p>
+						</div>
+					</div>
+					<div class="project-card" onclick="openLink('https://youtu.be/UWxefSFqYMM')">
+						<div class="project-thumb-parent">
+							<image src="imgs/mc41mod-thumb.jpg" class="project-thumb"></image>
+						</div>
+						<div class="project-content">
+							<h2 class="project-title">MC41 Mod</h2>
+							<p>Garry's Mod copy that I made for fun. It is unfinished and not in development.<br><br><u>Status</u><br><span class="red">Inactive development (2018–2018)</span></p>
+						</div>
+					</div>
+					<div class="project-card" onclick="openLink('https://gamejolt.com/games/TJocR2D/224000')">
+						<div class="project-thumb-parent">
+							<image src="imgs/tjocr2d-thumb.jpg" class="project-thumb"></image>
+						</div>
+						<div class="project-content">
+							<h2 class="project-title">TJoC:R 2D Android</h2>
+							<p>2D fangame of the game The Joy of Creation: Reborn. This probably is the first piece of software I ever published.<br><br><u>Status</u><br><span class="red">Inactive development (2016–2016)</span></p>
+						</div>
+					</div>
+				</div>
+				<div id="credits-page" class="page" align="left">
+					<h1>Credits</h1>
+					<p>
+						This website was made by me, Raine
+						<br>
+						The "Outfit" font was made by <a href="https://github.com/Outfitio" target="_blank">Outfit</a>
+						<br>
+						The "Roboto" font was made by <a href="http://christianrobertson.com/" target="_blank">Christian Robertson</a>
+					</p>
+				</div>
+				<div id="about-me-page" class="page" align="left">
+					<h1>More about me</h1>
+					<p>I speak Spanish and English.</p>
+					<p>I run Debian 11 "bullseye" in my personal computer.</p>
+					<p>
+						The programming languages that I have used (sorted from the ones that I'm the most knowledgeable about to the least) are:
+						<ul>
+							<li>JavaScript</li>
+							<li>Rust</li>
+							<li>C#</li>
+							<li>C / C++</li>
+							<li>Java</li>
+						</ul>
+					</p>
+					<p>
+						I have previously gone by the following names:
+						<ul>
+							<li>MC41Games</li>
+							<li>MC41</li>
+							<li>Mcleocito</li>
+							<li>Mcleocita</li>
+							<li>Cypress</li>
+						</ul>
+					</p>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="main.js"></script>
+</html>

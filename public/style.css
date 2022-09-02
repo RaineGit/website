@@ -1,0 +1,175 @@
+@font-face {
+    font-family: 'Outfit';
+    src: url('fonts/Outfit-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Outfit-SemiBold';
+    src: url('fonts/Outfit-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('fonts/Roboto-Regular.ttf');
+}
+
+body {
+	margin: 0;
+	background-color: #161616;
+	color: #F8F8F8;
+	font-size: 19px;
+	font-family: 'Roboto';
+	overflow-x: hidden;
+}
+
+h1, h2, h3 {
+	font-family: 'Outfit';
+}
+
+a, .fake-link {
+	color: #c70657;
+}
+
+a:visited {
+	color: #960944;
+}
+
+.fake-link {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.alignToHCenter {
+	position: absolute;
+	left: 50%;
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+
+.alignToVCenter {
+	position: absolute;
+	top: 50%;
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.navbar {
+	position: fixed;
+	top: 0;
+	padding-top: 30px;
+	width: min(calc(100% - 70px), 850px);
+	height: 68px;
+	max-width: 850px;
+	white-space: nowrap;
+	overflow-x: scroll;
+}
+
+a.navbar-button {
+	position: relative;
+	margin-left: 20px;
+	background: none;
+	color: #F8F8F8;
+	font-size: 20px;
+	font-family: 'Outfit';
+	text-decoration: none;
+	border: none;
+	cursor: pointer;
+}
+
+.sakura {
+	position: fixed;
+	margin: 0;
+	line-height: 24px;
+	font-size: 22px;
+	font-family: 'Outfit-SemiBold';
+	display: inline-block;
+}
+
+.logo {
+	position: fixed;
+	top: 40px;
+	opacity: 0.1;
+}
+
+.navbar-selector {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100px;
+	height: 41px;
+	background-color: #cf085b;
+	border-radius: 8px;
+	display: none;
+	transition: all 0.2s;
+}
+
+.pages-parent {
+	position: absolute;
+	top: 100px;
+	width: 100%;
+	height: calc(100% - 100px);
+	overflow: auto;
+}
+
+.pages {
+	width: min(calc(100% - 70px), 750px);
+	max-width: 750px;
+}
+
+.page {
+	display: none;
+}
+
+.generic-card {
+	margin-bottom: 30px;
+	padding: 20px;
+	cursor: pointer;
+	background-color: #303030;
+	border-radius: 15px;
+	box-shadow: 0 4px 8px 0 #171717, 0 6px 20px 0 #171717;
+	overflow: auto;
+	transition: all 0.2s;
+}
+
+.generic-card:hover {
+	background-color: #343434;
+}
+
+.project-card {
+	position: relative;
+	margin-bottom: 30px;
+	overflow: hidden;
+	cursor: pointer;
+	display: flex;
+}
+
+.project-thumb-parent {
+	margin-right: 30px;
+	width: min(370px, 90%);
+}
+
+.project-thumb {
+	width: 100%;
+	height: auto;
+	border-radius: 15px;
+}
+
+.project-content {
+	width: 100%;
+}
+
+.project-title {
+	margin-top: 10px;
+}
+
+.green {
+	color: #47fc56;
+}
+
+.amber {
+	color: #fcc247;
+}
+
+.red {
+	color: #fc4765;
+}
