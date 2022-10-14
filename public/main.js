@@ -9,7 +9,6 @@ var now = new Date();
 
 var hour = now.getUTCHours();
 var minute = now.getUTCMinutes();
-console.log(hour, minute);
 if((hour > 12 || (hour == 12 && minute >= 35)) && (hour < 19 || (hour == 19 && minute <= 10)))
 	document.getElementById("server-button").style.display = "inline-block";
 
