@@ -14,7 +14,7 @@
 			<div style="display: inline-block; width: 85px; height: 35px;"></div>
 			<a class="navbar-button" id="home-button" onclick="changePage('home')">Home</a>
 			<a class="navbar-button" id="projects-button" onclick="changePage('projects')">Projects</a>
-			<a class="navbar-button" href="https://server.raine.page">More stuff</a>
+			<a class="navbar-button" id="server-button" href="https://server.raine.page" style="display: none">More stuff</a>
 			<a class="navbar-button" id="credits-button" onclick="changePage('credits')">Credits</a>
 			<div style="display: inline-block; width: 10px; height: 35px;"></div>
 		</div>
@@ -23,28 +23,28 @@
 				<div id="home-page" class="page" align="left">
 					<h1>Home</h1>
 					<p>
-						Hi! I'm a 18-year-old who is interested in Computer Science and Natural Language Processing, I am currently studying Computer Science.<br>
+						Hi! I'm an 18-year-old who is interested in Computer Science and Natural Language Processing, I am currently studying Computer Science.<br>
 						In <a onclick="changePage('projects')" class="fake-link">Projects</a> you may find some of the things that I have made over the past years.<br>
 						<a onclick="changePage('about-me')" class="fake-link">More about me</a><br><br>
-						Thanks for coming!
+						Thanks for visiting my website!
 					</p>
 					<p>
 						Social links:<br>
-						<a href="https://discord.gg/EeWQBAf2zQ">Discord</a>
+						<a target="_blank" href="https://discord.gg/EeWQBAf2zQ">Discord</a>
 						<br>
-						<a href="https://github.com/MC41Github">Github</a>
+						<a target="_blank" href="https://github.com/RaineGit">Github</a>
 						<br>
-						<a href="https://youtube.com/mc41games">Youtube</a>
+						<a target="_blank" href="https://youtube.com/mc41games">Youtube</a>
 						<br>
-						<a href="https://twitter.com/mcleocita">Twitter</a>
+						<a target="_blank" href="https://twitter.com/mcleocita">Twitter</a>
 						<br>
-						<a href="https://twitter.com/cypress128">Personal Twitter</a>
+						<a target="_blank" href="https://twitter.com/cypress128">Personal Twitter</a>
 					</p>
 				</div>
 				<div id="projects-page" class="page" align="left">
-					<div class="generic-card" style="position: relative; margin-top: 30px; padding-right: 60px;" onclick="openLink('https://server.raine.page/gitea/cypress')">
+					<div class="generic-card" style="position: relative; margin-top: 30px; padding-right: 60px;" onclick="openLink('https://github.com/RaineGit')">
 						<h3 style="margin: 0; margin-bottom: 3px;">Small projects</h3>
-						<p style="margin: 0;">Messy and unorganized programs and/or games that I have made</p>
+						<p style="margin: 0;">My git repositories</p>
 						<img src="imgs/chevron-right-solid.svg" class="alignToVCenter" style="position: absolute; right: 20px; height: 25px;"></img>
 					</div>
 					<h1>Projects</h1>
@@ -57,7 +57,7 @@
 							<p>Projects that I keep private, either because they are still very experimental or because I know I will likely end up cancelling them.<br><br><u>Status</u><br><span class="green">In development</span></p>
 						</div>
 					</div>
-					<div class="project-card" onclick="alert('This project is cancelled')">
+					<div class="project-card" onclick="alert('This project doesn\'t have a website')">
 						<div class="project-thumb-parent">
 							<image src="imgs/3dgma-thumb.jpg" class="project-thumb"></image>
 						</div>
